@@ -1,0 +1,750 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Protest Strike", sans-serif;
+    box-sizing: border-box;
+}
+
+.h_img {
+    background-image: url("landscape-cartoon-scene-green-field-with-white-cloud-and-blue-sky-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header .first_header {
+    font-size: 90px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 0.5rem;
+    color: rgb(7, 170, 7);
+    text-shadow: 10px 10px 1px rgb(0, 0, 0);
+    position: fixed;
+    z-index: 5;
+    background-color: rgb(167, 242, 255);
+    width: 100%;
+}
+
+.h_img .animals2 {
+    background-image: url("Alabay Assets/DALL·E\ 2024-07-14\ 16.40.05\ -\ A\ 3D\ cartoon\ illustration\ of\ a\ furry\ Central\ Asian\ Shepherd\ dog\ jumping\ happily\ in\ the\ air.\ The\ dog\ should\ have\ a\ joyful\ expression\ with\ a\ wide\ smile\,\ 2.png");
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 100%;
+    position: relative;
+    top: 20%;
+}
+
+.h_img .animals1 {
+    background-image: url("Alabay Assets/DALL·E\ 2024-07-15\ 01.31.03\ -\ A\ full-body\ 3D\ cute\ cartoon\ illustration\ of\ a\ very\ happy\ furry\ Central\ Asian\ Shepherd\ dog\ dressed\ in\ a\ t-shirt\ with\ an\ Alabay\ dog\ printed\ on\ it\ and\ we\ 2.png ");
+    background-size: cover;
+    background-position: center;
+    height: 110%;
+    width: 120%;
+    position: relative;
+    top: 22%;
+}
+
+.h_img .animals3 {
+    background-image: url("Alabay Assets/DALL·E\ 2024-07-29\ 17.36.01\ -\ A\ 3D\ cartoon\ illustration\ of\ a\ cute\ furry\ Central\ Asian\ Shepherd\ dog\ holding\ a\ mobile\ phone\ and\ looking\ at\ it.\ The\ dog\ has\ expressive\ eyes\,\ a\ fluffy\ c\ 2.png");
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 100%;
+    position: relative;
+    top: 20%;
+}
+header .first_para {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 6rem;
+    z-index: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+header p span{
+    color: rgb(255, 174, 0);
+}
+
+.main_body {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    top: 95%;
+}
+
+.main_body1 {
+    background-color: rgb(255, 174, 0);
+    height: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main_body1 .img_1 {
+    background-image: url("Alabay Assets/DALL·E\ 2024-07-14\ 16.40.05\ -\ A\ 3D\ cartoon\ illustration\ of\ a\ furry\ Central\ Asian\ Shepherd\ dog\ jumping\ happily\ in\ the\ air.\ The\ dog\ should\ have\ a\ joyful\ expression\ with\ a\ wide\ smile\,\ 2.png");
+    background-size: cover;
+    height: 75%;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.main_body1 .text {
+    margin: 50px;
+    text-align: right;
+    width: 50%;
+}
+
+.main_body1 .text #one {
+    color: rgb(255, 115, 0);
+    font-size: 50px;
+}
+
+.main_body1 .text #two {
+    color: white;
+    font-size: 90px;
+}
+
+.main_body1 .text p {
+    font-size: 24px;
+}
+
+.main_body2 {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: #ffffff;
+    overflow: visible;
+    z-index: 1;
+}
+
+.main_body2::before,
+.main_body2::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    transform-origin: right top;
+    transform: skewY(-5deg);
+}
+
+.main_body2:after {
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: skewY(5deg);
+}
+
+.main_body2 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+.main_body2 .title a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4%;
+}
+
+.carousel-track-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-item {
+    flex: 0 0 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.carousel-item img {
+    background-clip:content-box;
+    width: 100%;
+    height: 250px;
+    border-radius: 0.5rem;
+    background-color: #696969;
+}
+
+button {
+    background-color: #313131;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px #313131b0;
+}
+.main_body2 .title .all{
+    color:rgb(255, 174, 0);
+}
+.main_body2 h1{
+    text-align: center;
+    font-size: 70px;
+    color:rgb(255, 174, 0);
+    margin-bottom: 7rem;
+    margin-top: 1.5rem;
+}
+.main_body2 .img{
+    background-image: url("Alabay Assets/DALL·E\ 2024-07-14\ 20.01.25\ -\ A\ wide\ 3D\ cartoon\ illustration\ of\ a\ group\ of\ furry\ Central\ Asian\ Shepherd\ dog\ friends.\ The\ dogs\ should\ have\ joyful\ expressions\ with\ wide\ smiles\,\ ears_\ 2.png");
+    background-size: cover;
+    width: 100%;
+    height: 105%;
+    position: relative;
+    bottom: 4rem;
+    
+}
+
+.main_body3 {
+    background-color: rgb(255, 174, 0);
+    height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
+    z-index: 0; 
+}
+.main_body3::before,
+.main_body3::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    transform-origin: left bottom;
+    transform: skewY(5deg);
+}
+.main_body3 p{
+    margin-top: 30rem;
+    text-align: center;
+    font-size: 25px;
+    padding: 4rem;
+}
+.main_body3 h1{
+    font-size: 90px;
+    color: white;
+    padding-left: 5rem;
+}
+.main_body4{
+    background-color: rgb(255, 255, 255);
+    height: 160%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main_body4 .grp{
+    display: flex;
+    height: 80%;
+}
+.main_body4 .img{
+    background-image: url("Alabay Assets/DALL·E\ 2024-07-14\ 21.37.17\ -\ A\ 3D\ cartoon\ illustration\ of\ a\ very\ happy\ furry\ Central\ Asian\ Shepherd\ dog\ in\ explorer\ attire\,\ standing\ at\ a\ crossroads\ and\ holding\ a\ map\ with\ a\ yello\ 2.png");
+    background-size: cover;
+    height: 88%;
+    width: 40%;
+    position: relative;
+    text-align: right;
+    margin-right: 3rem;
+    bottom: 5rem;
+   }
+.main_body4 .txt{
+    font-size: 30px;
+    width: 50%;
+    height: 50%;
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+.main_body4 #y{
+    color:  rgb(255, 174, 0);
+}
+.main_body4 .coll{
+    display: flex;
+    height: 80%;
+    position: relative;
+}
+.main_body4 .coll .imag1{
+    width: 25%;
+    background: linear-gradient( rgb(255, 174, 0), rgb(255, 255, 255));
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+}
+.imag2{
+    background: linear-gradient( aqua, rgb(255, 255, 255));
+    height: 75%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.imag3{
+    width: 25%;
+    background: linear-gradient( rgb(211, 27, 143), rgb(255, 255, 255));
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.imag4{
+    width: 12.5%;
+    background: linear-gradient( brown, rgb(255, 255, 255));
+    height: 75%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+}
+#st{
+    text-align: center;
+    border-top-left-radius: 1rem;
+    background-image: url("Alabay Assets/DALL·E\ 2024-07-15\ 01.28.43\ -\ A\ full\ body\ 3D\ cute\ cartoon\ illustration\ of\ a\ very\ happy\ furry\ Central\ Asian\ Shepherd\ dog\ dressed\ as\ a\ construction\ worker.\ The\ dog\ should\ have\ a\ big_\ 3.png");
+    background-size: cover;
+    height: 70%;
+    width: 80%;
+    position: relative;
+    top: 3rem;
+    margin-left: 1rem;
+}
+#nd{
+    
+    background-image: url("Alabay Assets/DALL·E 2024-07-15 01.31.03 - A full-body 3D cute cartoon illustration of a very happy furry Central Asian Shepherd dog dressed in a t-shirt with an Alabay dog printed on it and we 2.png");
+    background-size: cover;
+    width: 82%;
+    height: 70%;
+    position: relative;
+    top: 3rem;
+    margin-left: 1rem;
+    
+}
+#rd{
+    background-image: url("Alabay Assets/DALL·E 2024-07-15 01.32.53 - A full-body 3D cute cartoon illustration of a very happy furry Central Asian Shepherd dog celebrating with a trophy. The dog should have a big smile a 1.png");
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    top: 3rem;
+}
+#th{
+    border-top-right-radius: 1rem;
+    background-image: url("Alabay Assets/DALL·E 2024-07-15 01.33.29 - A full-body 3D cute cartoon illustration of a very happy furry Central Asian Shepherd dog dressed in a Viking outfit. The dog should have a big smile_ 1.png");
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    top: 3rem;
+}
+.details{
+    padding-top: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+.details h1{
+    font-size: 20px;
+}
+.details p{
+    font-size: 15px;
+}
+
+.main_body5 {
+    background-color: rgb(255, 174, 0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
+    z-index: 0; 
+}
+.main_body5::before,
+.main_body5::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    transform-origin: left top;
+    transform: skewY(-5deg);
+}
+.main_body5:after {
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: skewY(5deg);
+}
+.main_body5 h1{
+    font-size: 70px;
+    color: #ffffff;
+    padding: 2rem;
+}
+.nomics{
+    display: flex;
+}
+.mics{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.mics_item{
+    background-color: #111111;
+    margin-left: 7rem;
+    margin-top: 2rem;
+    width: 12rem;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+.wh{
+    color: #ffffff;
+    font-size: 1rem;
+}
+.yl{
+    color: rgb(255, 174, 0);
+}
+.img4{
+    background-image: url("Alabay Assets/DALL·E 2024-07-23 00.50.44 - A 3D cartoon illustration of a furry Central Asian Shepherd Alabay dog with big eyes, wearing a cap with a dollar logo on its head and counting money_ 1.png");
+    background-size: cover;
+    height: 140%;
+    width: 50%;
+    margin-left: 10rem;
+}
+.main_body6{
+    background-color: #ffffff;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    z-index: 1;
+}
+.main_body6 h1{
+    font-size: 90px;
+    color: rgb(255, 174, 0);
+}
+.main_body6 .carousel .carousel-track-container .carousel-track .carousel-item .one{
+    background-image: url("Alabay Assets/Alabay Merch/pink tee bck.png");
+    background-size: contain;
+}
+.main_body6 .carousel .carousel-track-container .carousel-track .carousel-item .two{
+    background-image: url("Alabay Assets/Alabay Merch/yellow tee bck.png");
+    background-size: contain;
+}
+.main_body6 .carousel .carousel-track-container .carousel-track .carousel-item .three{
+    background-image: url("Alabay Assets/Alabay Merch/black hoodie bck.png");
+    background-size: contain;
+}
+.main_body6 .carousel .carousel-track-container .carousel-track .carousel-item .four{
+    background-image: url("Alabay Assets/Alabay Merch/blue cap bck.png");
+    background-size: contain;
+}
+.main_body7 {
+    background-color: rgb(255, 174, 0);
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
+    z-index: 0; 
+}
+.main_body7::before,
+.main_body7::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    transform-origin: left top;
+    transform: skewY(-5deg);
+}
+.main_body7:after {
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: skewY(5deg);
+}
+.main_body7 h1{
+    color: white;
+    font-size: 90px;
+}
+.main_body7 p{
+    font-size: 25px;
+}
+.main_body7 .game_image{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_body7 .game_image img{
+    height: 100%;
+    width: 85%;
+    border: 2px solid#ffffff;
+    border-radius: 1rem;
+    position: relative;
+    top: 2rem;
+}
+.main_body7 .game_image a{
+    background-color: purple;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    bottom: 5rem;
+    width: 8rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 4px 4px 5px #000000e1;
+}
+.main_body8{
+    background-color: #fff;
+    height:230%;
+}
+.main_body8 .game_img{
+    padding-top: 18rem;
+    padding-left: 5rem;
+}
+.main_body8 .game_img span{
+    color:  rgb(255, 174, 0);
+}
+.games{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    height: 32%;
+    width: 80%;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+}
+.games img{
+    height: 70%;
+    width: 70%;
+}
+.games button{
+    margin-left: 1rem;
+}
+.main_body8 .yel{
+    color: rgb(255, 174, 0);
+    font-size: 90px;
+    margin-left: 3rem;
+}
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 5rem;
+    padding-right: 4rem;
+}
+.social_detail{
+    width: 35%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+    background-color: #346affc5;
+    border-radius: 2rem;
+    border: 0.5rem solid #215bfc;
+    gap: 1rem;
+    padding-left: 4rem;
+}
+.twitter{
+    display: flex;
+}
+.twitter a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+    background-color: #111111;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.logo1{
+    background-image: url("Alabay Assets/twitter logo 1.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.telegram{
+    display: flex;
+
+}
+.telegram a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.logo2{
+    background-image: url("Alabay Assets/Mask group.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.social_media img{
+    width: 50%;
+    height: 150%;
+}
+.game_header{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.game_header .game_page{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.game_header h1{
+    font-size: 50px;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    color: #ffffff;
+}
+.game_header h2{
+    font-size: 30px;
+    position: absolute;
+    top: 6rem;
+    left: 4rem;
+    color: rgb(141, 115, 255);
+}
+.body{
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 600;
+}
+.body .p1 p{
+    font-size: 20px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+}
+.body .p1 .button{
+    font-size: 20px;
+    position: absolute;
+    top: 28%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(141, 115, 255);
+    text-decoration: none;
+    width: 10rem;
+    text-align: center;
+    height: 2.3rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+.p1{
+    margin-bottom: 35rem;
+    display: flex;
+    flex-direction: column;
+}
+.body .p1 span{
+    color: rgb(141, 115, 255);
+}
+.p1 h2{
+    position: absolute;
+    top: 6.5rem;
+}
+.body h1,p span{
+    color: rgb(141, 115, 255);
+    font-weight: 600;
+}
+.body h1{
+    margin-bottom: 3rem;
+}
+.body .p2{
+    font-size: 1rem;  
+    padding-bottom: 2rem;
+}
+.body h2{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.p1 .img{
+    position: absolute;
+    top: 12rem;
+    display: flex;
+    gap: 1rem;
+    height: 250%;
+    width: 90%;
+}
+.p1 .img img{
+    height: 20%;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+.body .p2 .button2{
+    font-size: 20px;
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(141, 115, 255);
+    text-decoration: none;
+    width: 8rem;
+    text-align: center;
+    height: 2.3rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
